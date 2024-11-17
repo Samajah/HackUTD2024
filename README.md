@@ -1,10 +1,9 @@
 
 # PoyoBot - Financial Advisor Chatbot
 
-PoyoBot is an intelligent financial advisor chatbot designed to help users with various financial topics, including investment strategies, retirement planning, budgeting, and more. Built using Streamlit and FastAPI, PoyoBot answers questions using a pre-trained language model and a custom knowledge base.
+PoyoBot is an AI-powered Retrieval-Augmented Generation (RAG) chatbot designed to serve as a reliable and intelligent financial advisor.  By combining advanced natural language understanding with real-time access to curated financial data, our chatbot can answer financial inquiries, provide tailored advice, and assist users in making informed decisions about loans, investments, budgeting, and more. It’s like having a knowledgeable financial expert at your fingertips 24/7, delivering precise, trustworthy, and actionable insights.
 
 ## Table of Contents
-
 - [Project Overview](#project-overview)
 - [Features](#features)
 - [Installation](#installation)
