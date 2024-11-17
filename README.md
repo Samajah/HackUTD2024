@@ -5,7 +5,6 @@ PoyoBot is an AI-powered Retrieval-Augmented Generation (RAG) chatbot designed t
 
 ## Table of Contents
 - [Project Overview](#project-overview)
-- [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
@@ -16,12 +15,6 @@ PoyoBot is an AI-powered Retrieval-Augmented Generation (RAG) chatbot designed t
 ## Project Overview
 
 PoyoBot provides users with personalized financial insights by answering questions based on a knowledge base. The bot is designed to handle diverse financial inquiries and assist users in making informed financial decisions. 
-
-## Features
-
-- Answers predefined financial questions and dynamically responds to custom queries using FastAPI.
-- Provides users with insights into investment strategies, credit management, retirement planning, and more.
-- Interactive chat interface built with Streamlit.
 
 ## Installation
 
