@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #54DDE8; /* Blue color for the entire page */
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #F7CE79; /* Keep the navigation bar color as is */
+            padding: 10px;
+        }
+        .left {
+            margin-right: auto;
+        }
+        .right a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .right a:hover {
+            text-decoration: underline;
+        }
+        .left a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .left a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <a href="/">Chatbot</a>
+        </div>
+        <div class="right">
+            <a href="/page1">Page 1</a>
+            <a href="/page2">Page 2</a>
+            <a href="/page3">Page 3</a>
+        </div>
+    </nav>
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>

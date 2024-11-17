@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Home</title>
+    <style>
+        * {
+            box-sizing: border-box; /* Ensure padding and borders don't overflow elements */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Chatbot message section */
+        .chatbot-response {
+            background-color: #f1f1f1;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .prompt-section {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #8AD47E;
+            padding: 10px;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .prompt-section form {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+        }
+
+        .prompt-section input[type="text"] {
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .prompt-section button {
+            padding: 10px 15px;
+            background-color: #F5A3B6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .prompt-section button:hover {
+            background-color: #163950;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Chatbot Home Page</h1>
+
+    <!-- Display the chatbot response if it exists -->
+    {% if response %}
+        <div class="chatbot-response">
+            <p>{{ response }}</p>
+        </div>
+    {% endif %}
+
+    <!-- Prompt Section -->
+    <div class="prompt-section">
+        <form action="/" method="POST">
+            <input type="text" name="prompt" placeholder="Chat with Poyo.." required>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>
+{% endblock %}
